@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favcion.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/application.css" />
+    <link rel="stylesheet" href="../css/updatepassword.css">
+    <title>TBB Update</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="headingbar">
+            <div class="title">
+                <h2>User Management System</h2>
+            </div>
+            <div class="changepassword">
+                <button id="changepassword">Change Password</button>
+            </div>
+            <div class="logout">
+                <button id="logout">Logout</button>
+            </div>
+        </section>
+
+        <!-- form area  -->
+        <section class="applicationform">
+            <div class="formheading">
+                <h2>Edit Application : Registration Number</h2>
+            </div>
+            <div class="forms">
+                <fieldset class="personaldetails">
+                    <legend align="left">Personal Details</legend>
+                    <form class="form_personal_details" id="inputform_personaldetails">
+                        <div class="name">
+                            <label for="name">Name : &nbsp; </label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+
+                        <div class="fathername">
+                            <label for="fathername">Father Name : &nbsp;</label>
+                            <input type="text" name="fathername" id="fathername" />
+                        </div>
+
+                        <div class="mothername">
+                            <label for="mothername">Mother Name : &nbsp;</label>
+                            <input type="text" name="mothername" id="mothername" />
+                        </div>
+
+                        <div class="dob">
+                            <label for="dob">Date of Birth : &nbsp;</label>
+                            <input type="date" name="dob" id="dob" />
+                        </div>
+
+                        <div class="gender">
+                            <label for="gender">Gender : &nbsp;</label>
+                            <select name="gender" id="gender" value="Male">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Transgender">Transgender</option>
+                            </select>
+                        </div>
+
+                        <div class="identity_type">
+                            <label for="identity">Identity Type : &nbsp;</label>
+                            <select name="identity" id="identity_type" value="Aadhar">
+                                <option value="Aadhar">Aadhar</option>
+                                <option value="PanCard">PAN Card</option>
+                                <option value="Voterid">Voter ID</option>
+                                <option value="Passport">Passport</option>
+                            </select>
+                        </div>
+
+                        <div class="identity_details">
+                            <label for="identity_details">Identity Number : &nbsp;</label>
+                            <input type="text" name="identity_details" id="identity_details" />
+                        </div>
+
+                        <div class="photo">
+                            <label for="photo">Upload Photograph : &nbsp;</label>
+                            <input type="file" name="photo" id="photo" />
+                        </div>
+                    </form>
+                </fieldset>
+
+                <fieldset class="contactdetails">
+                    <legend align="left">Contact Details</legend>
+                    <form class="form_contact_details" id="inputform_contactdetails">
+                        <div class="address">
+                            <label for="address">Address : &nbsp; </label>
+                            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                            <div class="maxlength">
+                                <label for="locality">(max 100 characters)</label>
+                            </div>
+                        </div>
+
+                        <div class="locality">
+                            <label for="locality">Locality : &nbsp;</label>
+                            <textarea name="locality" id="locality" cols="30" rows="5"></textarea>
+                            <div class="maxlength">
+                                <label for="locality">(max 100 characters)</label>
+                            </div>
+                        </div>
+
+                        <div class="city">
+                            <label for="city">City/Town/Village : &nbsp;</label>
+                            <input type="text" name="city" id="city" />
+                        </div>
+
+                        <div class="district">
+                            <label for="district">District : &nbsp;</label>
+                            <input type="text" name="district" id="district">
+                        </div>
+
+                        <div class="state">
+                            <label for="state">State : &nbsp;</label>
+                            <input type="text" name="state" id="state">
+                        </div>
+
+                        <div class="country">
+                            <label for="country">Country : &nbsp;</label>
+                            <input type="text" name="country" id="country">
+                        </div>
+
+                        <div class="pincode">
+                            <label for="pincode">Pincode : &nbsp;</label>
+                            <input type="number" name="pincode" id="pincode" />
+                        </div>
+
+                        <div class="email">
+                            <label for="email">E-Mail Address : &nbsp;</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+
+                        <div class="phonenumber">
+                            <label for="phonenumber">Phone Number : &nbsp;</label>
+                            <input type="number" name="phonenumber" id="phonenumber" />
+                        </div>
+                    </form>
+                </fieldset>
+                <div class="confirmation">
+                    <fieldset>
+                        <legend align="left"> Update Confirmation</legend>
+                        <div class="finalconfirmation">
+                            <div class="message">
+                                <input type="checkbox" name="confirmation" id="confirmation">
+                                <label for="confirmation" style="font-weight: bold;">All the update details are best of
+                                    my
+                                    Knowledge</label>
+                            </div>
+                            <div class="confirmbutton">
+                                <button type="submit" id="update_details_button">Update Details</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            &#169; Made With Love
+            <h4 style="color: red">&nbsp; &#x2764; &nbsp;</h4>
+            The Binary Bytes
+        </footer>
+    </div>
+
+    <!-- changepassword window  -->
+    <div class="changepasswordwindow" id="changepasswordwindow">
+        <div class="heading">
+            <h3 id="updateheading">Update Password</h3>
+            <div class="close">
+                <span id="close">&#10060;</span>
+            </div>
+        </div>
+        <div class="updateform">
+            <form class="updateformdetails">
+                <div class="newpassword">
+                    <label for="newpassword">Enter New Password :&nbsp;</label>
+                    <input type="text" name="newpassword" id="newpassword">
+                </div>
+                <div class="confirmnewpassword">
+                    <label for="confirmnewpassword">Confirm New Password :&nbsp;</label>
+                    <input type="text" name="confirmnewpassword" id="confirmnewpassword">
+                </div>
+                <div class="updateconfirm">
+                    <button type="submit" id="updateconfirm">Update Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- axios link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/editdetails.js"></script>
+
+</html>

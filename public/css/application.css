@@ -1,0 +1,457 @@
+body {
+  box-sizing: border-box;
+  background: url("../assets/background1.jpg");
+  background-size: cover;
+}
+
+.container{
+  filter: none;
+}
+.headingbar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.title {
+  width: 110rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding-left: 235px;
+  color: black;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+#logout {
+  height: 25px;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+}
+#logout:hover {
+  transform: translateY(3px);
+  cursor: pointer;
+}
+#logout:active {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.changepassword {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+#changepassword {
+  height: 25px;
+  width: max-content;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+}
+#changepassword:hover {
+  transform: translateY(3px);
+  cursor: pointer;
+}
+#changepassword:active {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.applicationform {
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+}
+
+.formheading {
+  box-sizing: border-box;
+  font-size: large;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: brown;
+  font-weight: bolder;
+  font-display: initial;
+  text-align: center;
+  text-decoration: none;
+  background-color: lightyellow;
+  border-style:hidden;
+  margin: 0px 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px rebeccapurple;
+}
+
+.formdetails {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+
+/* =====================================================PERSONAL DETAILS================
+*/
+.forms {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px 40px;
+  border-style: ridge;
+  background-color: white;
+}
+
+.form_personal_details {
+  margin: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_contact_details {
+  margin: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.finalconfirmation {
+  margin: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.name {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.fathername {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.mothername {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.dob {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.gender {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.identity_type {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.identity_details {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.photo {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+
+.address {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+
+.locality {
+  display: flex;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.city {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.district {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.state {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.country {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.pincode {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.email {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.phonenumber {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+
+/* ===================================input id================== */
+#name {
+  display: flex;
+  justify-content: center;
+  margin-left: 98px;
+  border-style: outset;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#fathername {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 41px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#mothername {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 36px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#dob {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 44px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+  font-family: "Times New Roman", Times, serif;
+}
+#gender {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 90px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#identity_type {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 44px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#identity_details {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#photo {
+  display: flex;
+  justify-content: safe;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+
+#address {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 84px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: medium;
+  justify-content: center;
+}
+
+#locality {
+  display: flex;
+  margin-left: 84px;
+  line-height: 20px;
+  border-style: outset;
+  width: 300px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: medium;
+  justify-content: center;
+}
+#city {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#district {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 91px;
+  line-height: 20px;
+  width: 300px;
+  font-weight: bold;
+}
+#state {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 111px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#country {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 84px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#pincode {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 88px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#email {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 28px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+#phonenumber {
+  display: flex;
+  justify-content: safe;
+  border-style: outset;
+  margin-left: 32px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 300px;
+}
+
+button[type="submit"] {
+  height: 25px;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+button[type="submit"]:active {
+  transform: rotate(360deg);
+}
+
+legend {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
+.maxlength{
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}

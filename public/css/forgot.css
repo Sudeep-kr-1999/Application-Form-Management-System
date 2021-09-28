@@ -1,0 +1,93 @@
+.forgotcontainer {
+  position: fixed;
+  top: 30%;
+  left: 36%;
+  height: 300px;
+  width: 500px;
+  padding: 10px 20px;
+  border-style: groove;
+  background-color:white; 
+  box-shadow: 2px 2px yellow;
+  display: none;   
+}
+label {
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+.forgot {
+  height: 250px;
+  margin: 2px 2px;
+  padding: 2px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.emailbox {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#email {
+  line-height: 20px;
+  width: 250px;
+  border-style: outset;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.regno {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forgot_password {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finddetails {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#forgot {
+  height: 25px;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+#forgot:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+#forgot:active {
+  transform: rotate(360deg);
+}
+
+.close {
+  margin: 5px 0px;
+}
+
+#close {
+  float: right;
+}
+
+#close:hover{
+  cursor: pointer;
+  transform: translateY(5px);
+}

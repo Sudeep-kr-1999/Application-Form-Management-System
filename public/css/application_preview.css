@@ -1,0 +1,488 @@
+body {
+  box-sizing: border-box;
+  background: url("../assets/background1.jpg");
+  background-size: cover;
+}
+
+.container{
+  filter: none;
+}
+.headingbar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.title {
+  width: 110rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding-left: 235px;
+  color: black;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+#logout {
+  height: 25px;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+}
+#logout:hover {
+  transform: translateY(3px);
+  cursor: pointer;
+}
+#logout:active {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.changepassword {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+#changepassword {
+  height: 25px;
+  width: max-content;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+}
+#changepassword:hover {
+  transform: translateY(3px);
+  cursor: pointer;
+}
+#changepassword:active {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.applicationform {
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+}
+
+.formheading {
+  box-sizing: border-box;
+  font-size: large;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: brown;
+  font-weight: bolder;
+  font-display: initial;
+  text-align: center;
+  text-decoration: none;
+  background-color:lightyellow;
+  border-style: hidden;
+  margin: 0px 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px rebeccapurple;
+
+}
+
+.formdetails {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+
+/* =====================================================PERSONAL DETAILS================
+  */
+.forms {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px 40px;
+  border-style: ridge;
+  background-color: white;
+}
+
+.form_personal_details {
+  margin: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_contact_details {
+  margin: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.finalconfirmation {
+  margin: 10px 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.name {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.fathername {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.mothername {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.dob {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.gender {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.identity_type {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.identity_details {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.photo {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+
+.address {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+
+.locality {
+  display: flex;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.city {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.district {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.state {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.country {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.pincode {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.email {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+.phonenumber {
+  display: flex;
+  justify-content: safe;
+  padding: 4px 0px;
+  margin: 10px 0px;
+}
+
+/* ===================================input id================== */
+#name {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  margin-left: 104px;
+  border-style: none;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#fathername {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 52px;
+  line-height: 20px;
+  font-weight: bold;  
+  color: darkblue;
+}
+#mothername {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 46px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#dob {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 53px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: darkblue;
+}
+#gender {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 96px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#identity_type {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 51px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#identity_details {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 24px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#photo {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+  margin-left: 62px;
+}
+
+#address {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 80px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: medium;
+  color: darkblue;
+}
+
+#locality {
+  width: 90%;
+  display: flex;
+  margin-left: 80px;
+  line-height: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: medium;
+  justify-content: flex-start;
+  border-style: none;
+  color: darkblue;
+}
+#city {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#district {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 91px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#state {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 111px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#country {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 84px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#pincode {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 88px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+#email {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+  margin-left: 30px;
+}
+#phonenumber {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-style: none;
+  margin-left: 32px;
+  line-height: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+button[type="reset"] {
+  height: 25px;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+button[type="reset"]:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+button[type="reset"]:active {
+  transform: rotate(360deg);
+}
+
+legend {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#application_pdf {
+  height: 25px;
+  border: none;
+  background-color: brown;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+#application_pdf:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+#application_pdf:active {
+  transform: rotate(360deg);
+}
